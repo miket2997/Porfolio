@@ -26,7 +26,7 @@ export default function Contact() {
   }
   
   return (
-    <div className="contact--container">
+    <div className="contact--container" id="contact">
       <h2>Contact Me</h2>
       {state.succeeded ? (
         <p>Thanks for contacting me!</p>

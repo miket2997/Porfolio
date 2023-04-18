@@ -1,4 +1,15 @@
 /* styles for the navbar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+body {
+  height: 100%;
+}
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
@@ -24,7 +35,7 @@
 
 /* Main */
 .home {
-  padding: 30px;
+  padding: 0 30px;
 }
 
 .home h1 {
@@ -63,10 +74,12 @@
 
 .contact--container {
   background-color: rgb(181, 232, 247);
-  height: 600px;
   margin-top: 30px;
   padding: 30px;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  border-radius: 100px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact--container h2 {
@@ -128,6 +141,30 @@ textarea {
   background-color: #3e8e41;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+footer {
+  background-color: rgb(251, 245, 245);
+  height: 100px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+footer ul li {
+  margin: 20px;
+  font-size: larger;
+  font-weight: 600;
+}
 
 @media screen and (min-width: 1300px){
   .home {
@@ -257,6 +294,9 @@ textarea {
   .contact--container {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    height: 600px;
+    width: 100%;
   }
 }
 
@@ -290,6 +330,7 @@ textarea {
   }
   .projects h2 {
     font-weight: bold;
+    text-align: center;
   }
   .dependencies {
     display: flex;
@@ -304,6 +345,29 @@ textarea {
     border: 1px solid;
     margin: 10px;
   }
+
+  .project, .project3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project--links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
+  .project--links p {
+    font-size: larger;
+    font-weight: 800;
+    padding: 5px 10px;
+    margin: 5px 10px;
+  }
 }
 
 
@@ -312,7 +376,7 @@ textarea {
   .home {
     max-width: 800px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
@@ -389,7 +453,6 @@ textarea {
 
   /* styles for the projects component */
   .projects {
-    margin-bottom: 30px;
     background-color: beige;
     padding: 30px;
   }
@@ -425,22 +488,107 @@ textarea {
 
   .project--links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     margin-top: 30px;
   }
 
   .project--links > p {
-    font-size: larger;
+    font-size: normal;
+    text-align: center;
     font-weight: 800;
+    margin: 5px 15px;
+    padding: 5px 15px;
+  }
+
+  .icon {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .project, .project3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 630px) {
+  .home {
+    padding: 0;
+  }
   iframe {
-    width: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .contact--container {
+    border-radius: 25px;
+    width: 100%;
+  }
+
+  .skills h2 {
+    margin-bottom: 20px;
+    color: rgb(2, 62, 2);
+  }
+
+ 
+
+  footer ul {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+  }
+
+  footer ul li {
+    font-size: 16px;
+  }
+
+  .icons {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icons li {
+    font-size: 8px;
+  }
+  .skills--img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .mongo {
+    height: 60px;
+    width: 90px;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 838px){
+  .icons li {
+    font-size: 10px;
+  }
+
+  .icons {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .skills--img {
+    height: 47px;
+    width: 47px;
+  }
+  .projects h2 {
+    text-align: center;
+  }
+  .skills h2 {
+    text-align: center;
   }
 }

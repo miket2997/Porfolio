@@ -7,7 +7,7 @@ import { faCss3, faJs, faNode, faReact, faGitAlt } from '@fortawesome/free-brand
 export default function Skills(){
 
     return (
-        <div className="skills">
+        <div className="skills" id="skills">
             <h2>Technological Skills</h2>
             <ul className="icons">
                 <li>
@@ -26,13 +26,13 @@ export default function Skills(){
                     <FontAwesomeIcon icon={faGitAlt} size="4x" />
                 </li>
                 <li>
-                    <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" />
+                    <img className="skills--img" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" />
                 </li>
                 <li>
-                    <img src="https://www.vectorlogo.zone/logos/json/json-icon.svg" style={{ background: "none" }}/>
+                    <img className="skills--img" src="https://www.vectorlogo.zone/logos/json/json-icon.svg" style={{ background: "none" }}/>
                 </li>
                 <li>
-                    <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" />
+                    <img className="mongo" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" />
                 </li>
             </ul>
         </div>
