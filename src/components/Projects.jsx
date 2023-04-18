@@ -52,14 +52,14 @@ export default function Projects(){
                     <p>
                         See full live demo
                         <br />
-                        <a href="https://best-sports-moments.onrender.com/">
+                        <a href="https://best-sports-moments.onrender.com/" target="_blank">
                             <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon" />
                         </a>
                     </p>
                     <p>
                         See my code
                         <br />
-                        <a href="https://github.com/miket2997/Vschool-Level-6-Capstone">
+                        <a href="https://github.com/miket2997/Vschool-Level-6-Capstone" target="_blank">
                             <FontAwesomeIcon icon={ faGithub } size="2x" className="icon" />
                         </a>
                     </p>
@@ -100,14 +100,14 @@ export default function Projects(){
                     <p>
                         See full live demo
                         <br />
-                        <a href="https://hiking-with-dogs.onrender.com/">
+                        <a href="https://hiking-with-dogs.onrender.com/" target="_blank">
                             <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon" />
                         </a>
                     </p>
                     <p>
                         See my code
                         <br />
-                        <a href="https://github.com/miket2997/Vschool-Level-5-Capstone">
+                        <a href="https://github.com/miket2997/Vschool-Level-5-Capstone" target="_blank">
                             <FontAwesomeIcon icon={ faGithub } size="2x" className="icon" />
                         </a>
                     </p>
@@ -137,14 +137,14 @@ export default function Projects(){
                     <p>
                         See full live demo
                         <br />
-                        <a href="https://nhl-stats-app.onrender.com/">
-                            <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon"/>
+                        <a href="https://nhl-stats-app.onrender.com/" target="_blank">
+                            <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon" />
                         </a>
                     </p>
                     <p>
                         See my code
                         <br />
-                        <a href="https://github.com/miket2997/VSchool-Level-4-Capstone">
+                        <a href="https://github.com/miket2997/VSchool-Level-4-Capstone" target="_blank">
                             <FontAwesomeIcon icon={ faGithub } size="2x" className="icon"/>
                         </a>
                     </p>

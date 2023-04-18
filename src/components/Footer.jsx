@@ -9,7 +9,7 @@ export default function Footer(){
                 <li>Michael Toy Portfolio</li>
                 <li>Copyright @2023</li>
                 <li>
-                    <a href="https://github.com/miket2997">
+                    <a href="https://github.com/miket2997" target="_blank">
                     <FontAwesomeIcon icon={faGithub} size="3x" />
                     </a>
                 </li>
