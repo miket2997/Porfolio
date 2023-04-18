@@ -569,6 +569,15 @@ footer ul li {
     height: 60px;
     width: 90px;
   }
+
+  .projects h2 {
+    text-align: center;
+  }
+
+  .dependencies {
+    padding: 0;
+  }
+
 }
 
 @media screen and (min-width: 630px) and (max-width: 838px){
@@ -589,6 +598,18 @@ footer ul li {
     text-align: center;
   }
   .skills h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .dependencies {
+    font-size: 13px;
+  }
+  .dependencies li {
+    padding: 5px 10px;
+  }
+  .projects h2 {
     text-align: center;
   }
 }

@@ -43,10 +43,10 @@ export default function Projects(){
                     <li>Bcrypt</li>
                     <li>Dotenv</li>
                     <li>React</li>
+                    <li>Axios</li>
                     <li>React-router-dom</li>
                     <li>React-bootstrap</li>
                     <li>React-select</li>
-                    <li>Axios</li>
                 </ul>
                 <div className="project--links">
                     <p>
@@ -91,10 +91,10 @@ export default function Projects(){
                     <li>Dotenv</li>
                     <li>Bcrypt</li>
                     <li>React</li>
+                    <li>Axios</li>
                     <li>React-router-dom</li>
                     <li>React-bootstrap</li>
                     <li>React Carousel</li>
-                    <li>Axios</li>
                 </ul>
                 <div className="project--links">
                     <p>
