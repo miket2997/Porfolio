@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Contact from "./Contact";
+
 
 export default function Projects(){
+    const [isLoading, setIsLoading] = useState(true);
+
+    function handleLoading(){
+        setIsLoading(false)
+    }
+
     return (
         <div className="projects">
             <h2>Projects</h2>
@@ -40,7 +48,14 @@ export default function Projects(){
                         </a>
                     </p>
                 </div>
-                <iframe src="https://best-sports-moments.onrender.com/" height="500px" width='500px'></iframe>
+                { isLoading && <p>Loading...</p>}
+                <iframe 
+                    src="https://best-sports-moments.onrender.com/" 
+                    height="500px" 
+                    width='500px' 
+                    title="NHL Stats App" 
+                    onLoad={ handleLoading }
+                />
             </div>
             <br />
             <div className="project two">
@@ -75,7 +90,14 @@ export default function Projects(){
                         </a>
                     </p>
                 </div>
-                <iframe src="https://hiking-with-dogs.onrender.com/" height="500px" width="500px"></iframe>
+                { isLoading && <p>Loading...</p> }
+                <iframe 
+                    src="https://hiking-with-dogs.onrender.com/" 
+                    height="500px" 
+                    width="500px" 
+                    title="NHL Stats App(Loading)"
+                    onLoad={ handleLoading }
+                />
             </div>
             <br />
             <div className="project3">
@@ -103,8 +125,16 @@ export default function Projects(){
                         </a>
                     </p>
                 </div>
-                <iframe src="https://nhl-stats-app.onrender.com/" height="500px" width="500px"></iframe>
+                { isLoading && <p>Loading...</p> }
+                <iframe 
+                    src="https://nhl-stats-app.onrender.com/" 
+                    height="500px" 
+                    width="500px" 
+                    title="NHL Stats App(Loading)"
+                    onLoad={ handleLoading }
+                />
             </div>
+            <Contact />
         </div>
     )
 }
