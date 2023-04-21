@@ -29,7 +29,7 @@ export default function Projects(){
             <div className="project one">
                 <h4>Greatest Sports Moments</h4>
                 <p>This is an app for sports fans that allows you to create an account and contribute to a public list of great sports moments.
-                    Along with the dsecription of the moment, a user can add a youtube link to the highlight of the moment and watch the video in the 
+                    Along with the description of the moment, a user can add a youtube link to the highlight of the moment and watch the video in the 
                     app. Users can also like moments and add comments underneath each moment. 
                 </p>
                 <h5>Engineered with:</h5>
