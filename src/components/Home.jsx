@@ -8,6 +8,7 @@ export default function Main(){
     return (
         <div className="home">
             <h1>Michael Toy Portfolio</h1>
+            <p className="header">Full Stack Web Developer with a passion for problem solving and creating user-friendly and responsive web applications</p>
             <img className="my--photo" src={hikingImage} alt="picture" />
             <About />
             <br />
