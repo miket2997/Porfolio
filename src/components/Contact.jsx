@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "@formspree/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mnqylqln");
@@ -21,9 +23,15 @@ export default function Contact() {
   }
 
   function handleFormSubmit(event) {
-    event.preventDefault(); // prevent default form submit behavior
+    event.preventDefault(); 
     handleSubmit(inputs); // submit the form with the current inputs
+  };
+
+  function handleDownload() {
+    const resumeUrl = "https://drive.google.com/file/d/1sDRcbTDsgLLfMgwI1w48d0ElU0j0lnPk/view?usp=sharing"; 
+    window.open(resumeUrl, "_blank");
   }
+  
   
   return (
     <div className="contact--container" id="contact">
@@ -57,6 +65,11 @@ export default function Contact() {
           />
           <button type="submit" disabled={state.submitting}>
             {state.submitting ? "Submitting..." : "Submit"}
+          </button>
+          <button style={{background: "none", color: "black", fontWeight: "bold"}} type="button" onClick={ handleDownload }>
+            Download Resume
+            <br />
+            <FontAwesomeIcon icon={ faDownload } size="2x" />
           </button>
         </form>
       )}

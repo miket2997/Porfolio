@@ -178,6 +178,10 @@ footer ul li {
   font-weight: 600;
 }
 
+.footer--list li a {
+  color: inherit;
+}
+
 @media screen and (min-width: 1300px){
   .home {
     display: grid;
@@ -560,11 +564,14 @@ footer ul li {
     margin-top: auto;
     margin-bottom: auto;
     align-items: center;
+    margin-right: 30px;
   }
 
   footer ul li {
-    font-size: 16px;
+    font-size: 12px;
   }
+
+
 
   .icons {
     margin: 0;
