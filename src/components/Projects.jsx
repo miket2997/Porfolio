@@ -66,7 +66,7 @@ export default function Projects(){
                 </div>
                 { isLoadingOne && <p className="loading"><FontAwesomeIcon icon={ faSpinner } spin size="5x"/></p>}
                 <iframe 
-                    src="greatestsportsmoments.onrender.com/" 
+                    src="https://greatestsportsmoments.onrender.com/" 
                     height="500px" 
                     width='500px' 
                     title="Greatest Sports Moments" 
