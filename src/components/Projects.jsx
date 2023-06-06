@@ -52,7 +52,7 @@ export default function Projects(){
                     <p>
                         See full live demo
                         <br />
-                        <a href="https://best-sports-moments.onrender.com/" target="_blank">
+                        <a href="https://greatestsportsmoments.onrender.com/" target="_blank">
                             <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon" />
                         </a>
                     </p>
@@ -66,7 +66,7 @@ export default function Projects(){
                 </div>
                 { isLoadingOne && <p className="loading"><FontAwesomeIcon icon={ faSpinner } spin size="5x"/></p>}
                 <iframe 
-                    src="https://best-sports-moments.onrender.com/" 
+                    src="greatestsportsmoments.onrender.com/" 
                     height="500px" 
                     width='500px' 
                     title="Greatest Sports Moments" 
@@ -100,7 +100,7 @@ export default function Projects(){
                     <p>
                         See full live demo
                         <br />
-                        <a href="https://hiking-with-dogs.onrender.com/" target="_blank">
+                        <a href="https://hikingwithdogs.onrender.com/" target="_blank">
                             <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon" />
                         </a>
                     </p>
@@ -114,7 +114,7 @@ export default function Projects(){
                 </div>
                 { isLoadingTwo && <p className="loading"><FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
                 <iframe 
-                    src="https://hiking-with-dogs.onrender.com/" 
+                    src="https://hikingwithdogs.onrender.com/" 
                     height="500px" 
                     width="500px" 
                     title="Hiking with Dogs"
@@ -137,7 +137,7 @@ export default function Projects(){
                     <p>
                         See full live demo
                         <br />
-                        <a href="https://nhl-stats-app.onrender.com/" target="_blank">
+                        <a href="https://nhl-stats-app.netlify.app/" target="_blank">
                             <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon" />
                         </a>
                     </p>
@@ -151,7 +151,7 @@ export default function Projects(){
                 </div>
                 { isLoadingThree && <p className="loading"><FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
                 <iframe 
-                    src="https://nhl-stats-app.onrender.com/" 
+                    src="https://nhl-stats-app.netlify.app/" 
                     height="500px" 
                     width="500px" 
                     title="NHL Stats App"
