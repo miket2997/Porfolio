@@ -59,12 +59,12 @@ export default function Projects(){
                     <p>
                         See my code
                         <br />
-                        <a href="https://github.com/miket2997/Vschool-Level-6-Capstone" target="_blank">
+                        <a href="https://github.com/miket2997/Greatest-Sports-Moments" target="_blank">
                             <FontAwesomeIcon icon={ faGithub } size="2x" className="icon" />
                         </a>
                     </p>
                 </div>
-                { isLoadingOne && <p className="loading"><FontAwesomeIcon icon={ faSpinner } spin size="5x"/></p>}
+                { isLoadingOne && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } } className="loading">May take a minute to load <FontAwesomeIcon icon={ faSpinner } spin size="5x"/></p>}
                 <iframe 
                     src="https://greatestsportsmoments.onrender.com/" 
                     height="500px" 
@@ -107,12 +107,12 @@ export default function Projects(){
                     <p>
                         See my code
                         <br />
-                        <a href="https://github.com/miket2997/Vschool-Level-5-Capstone" target="_blank">
+                        <a href="https://github.com/miket2997/Hiking-With-Dogs" target="_blank">
                             <FontAwesomeIcon icon={ faGithub } size="2x" className="icon" />
                         </a>
                     </p>
                 </div>
-                { isLoadingTwo && <p className="loading"><FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
+                { isLoadingTwo && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } } className="loading">May take a minute to load <FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
                 <iframe 
                     src="https://hikingwithdogs.onrender.com/" 
                     height="500px" 
@@ -144,12 +144,12 @@ export default function Projects(){
                     <p>
                         See my code
                         <br />
-                        <a href="https://github.com/miket2997/VSchool-Level-4-Capstone" target="_blank">
+                        <a href="https://github.com/miket2997/NHL-Stats-App" target="_blank">
                             <FontAwesomeIcon icon={ faGithub } size="2x" className="icon"/>
                         </a>
                     </p>
                 </div>
-                { isLoadingThree && <p className="loading"><FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
+                { isLoadingThree && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } } className="loading">Loading <FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
                 <iframe 
                     src="https://nhl-stats-app.netlify.app/" 
                     height="500px" 

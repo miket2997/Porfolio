@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   function handleDownload() {
-    const resumeUrl = "https://drive.google.com/file/d/1sDRcbTDsgLLfMgwI1w48d0ElU0j0lnPk/view?usp=sharing"; 
+    const resumeUrl = "https://drive.google.com/file/d/1ZJM9sZJflJ8chYjZ2K8z64_T1BdBtwrw/view?usp=sharing"; 
     window.open(resumeUrl, "_blank");
   }
   
