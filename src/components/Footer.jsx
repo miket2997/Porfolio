@@ -14,7 +14,7 @@ export default function Footer(){
                     </a>
                 </li>
                 <li>
-                    <a href="www.linkedin.com/in/michaeltoy29">
+                    <a href="https://www.linkedin.com/in/michaeltoy29/">
                         <FontAwesomeIcon icon={ faLinkedin } size="3x" target="_blank" />
                     </a>
                 </li>
