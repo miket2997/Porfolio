@@ -64,7 +64,7 @@ export default function Projects(){
                         </a>
                     </p>
                 </div>
-                { isLoadingOne && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } } className="loading">May take a minute to load <FontAwesomeIcon icon={ faSpinner } spin size="5x"/></p>}
+                { isLoadingOne && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } } className="loading">Due to Render limitations, project may take a minute to load initially<FontAwesomeIcon icon={ faSpinner } spin size="5x"/></p>}
                 <iframe 
                     src="https://greatestsportsmoments.onrender.com/" 
                     height="500px" 
@@ -112,7 +112,7 @@ export default function Projects(){
                         </a>
                     </p>
                 </div>
-                { isLoadingTwo && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } } className="loading">May take a minute to load <FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
+                { isLoadingTwo && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } } className="loading">Due to Render limitations, project may take a minute to load initially <FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
                 <iframe 
                     src="https://hikingwithdogs.onrender.com/" 
                     height="500px" 
