@@ -9,6 +9,7 @@ export default function Projects(){
     const [isLoadingOne, setIsLoadingOne] = useState(true);
     const [isLoadingTwo, setIsLoadingTwo] = useState(true);
     const [isLoadingThree, setIsLoadingThree] = useState(true);
+    const [isLoadingFour, setIsLoadingFour] = useState(true);
 
     function handleLoadingOne(){
         setIsLoadingOne(false)
@@ -20,7 +21,11 @@ export default function Projects(){
 
     function handleLoadingThree(){
         setIsLoadingThree(false)
-    }
+    };
+
+    function handleLoadingFour(){
+        setIsLoadingFour(false)
+    };
 
     return (
         <div className="projects" id="projects">
@@ -32,7 +37,7 @@ export default function Projects(){
                     Along with the description of the moment, a user can add a youtube link to the highlight of the moment and watch the video in the 
                     app. Users can also like moments and add comments underneath each moment. 
                 </p>
-                <h5>Engineered with:</h5>
+                <h5><strong>Engineered with:</strong></h5>
                 <ul className="dependencies">
                     <li>MongogDB</li>
                     <li>Mongoose</li>
@@ -80,7 +85,7 @@ export default function Projects(){
                     a list of dog friendly hiking trails and be able to add trails of your own. You can also leave reviews of trails and view reviews
                     left by other users.
                 </p>
-                <h5>Engineered with:</h5>
+                <h5><strong>Engineered with:</strong></h5>
                 <ul className="dependencies">
                     <li>MongogDB</li>
                     <li>Mongoose</li>
@@ -122,12 +127,15 @@ export default function Projects(){
                 />
             </div>
             <br />
-            <div className="project3">
+            <div className="project project3">
                 <h4>NHL Stats App</h4>
-                <p>This is an app that allows you to view statistics from any NHL player from the 2022-2023 regular season. It also allows you to
-                    view basic team info and includes a feature for comparing the statistics of two players side by side.
+                <p>This is an app that allows a user to access statistics for NHL players in the most recent season(2022-2023). The user can select an NHL
+                    team from a list, view basic information about that team, and view the entire roster of that team. On the roster page, the user can choose
+                    any player and see their statistics for the season. There is also a page for player comparison where the user can select two players and view
+                    their statistics side by side. There is also a feature that allows the user to easily switch between a dark theme and a light
+                    theme with a toggle button.
                 </p>
-                <h5>Engineered with:</h5>
+                <h5><strong>Engineered with:</strong></h5>
                 <ul className="dependencies">
                     <li>React</li>
                     <li>React-router-dom</li>
@@ -156,6 +164,46 @@ export default function Projects(){
                     width="500px" 
                     title="NHL Stats App"
                     onLoad={ handleLoadingThree }
+                />
+            </div>
+            <div className=" project project4">
+                <h4>Harry Potter App</h4>
+                <p>This is an app for Harry Potter fans with a few different functionalities. The user can view a list of characters and click 
+                    on a character to be taken to a page containing a full character profile. The user can also visit a page that contains a list
+                    of spells and the description of each spell. Lastly, a user can take a quick quiz to test their Harry Potter knowledge and 
+                    receive their score at the end of the quiz.
+                </p>
+                <h5><strong>Engineered with:</strong></h5>
+                <ul className="dependencies">
+                    <li>React</li>
+                    <li>React-router-dom</li>
+                    <li>Axios</li>
+                    <li>React Bootstrap</li>
+                    <li>Tailwind UI</li>
+                </ul>
+                <div className="project--links">
+                    <p>
+                        See full live demo
+                        <br />
+                        <a href="https://harrypotterapp.netlify.app/" target="_blank">
+                            <FontAwesomeIcon icon={ faVideoCamera } size="2x" className="icon" />
+                        </a>
+                    </p>
+                    <p>
+                        See my code
+                        <br />
+                        <a href="https://github.com/miket2997/Harry-Potter" target="_blank">
+                            <FontAwesomeIcon icon={ faGithub } size="2x" className="icon" /> 
+                        </a>
+                    </p>
+                </div>
+                { isLoadingFour && <p style={ { fontWeight: "bold", fontSize: "1.5rem" } }  className="loading">Loading <FontAwesomeIcon icon={ faSpinner } spin size="5x" /></p> }
+                <iframe
+                    src="https://harrypotterapp.netlify.app/"
+                    height="500px"
+                    width="500px"
+                    title="Harry Potter App"
+                    onLoad={ handleLoadingFour } 
                 />
             </div>
             <Contact />
